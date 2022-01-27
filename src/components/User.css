@@ -1,0 +1,14 @@
+.userWrapper{
+    text-align: center;
+}
+
+.imgWrapper{
+    width:100%;
+}
+
+.imgWrapper > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
