@@ -1,13 +1,15 @@
 import "./User.css";
 import React from 'react';
 
-function User() {
+function User(props) {
+  const { avatarImage, userUrl, name, login } = props;
+
   return (
-    <a href="https://www.github.com" target="_blank">
+    <a href={userUrl} target="_blank">
       <div className="Container">
-        <img src="/twitter.png" alt="user"  /> 
+        <img src={avatarImage} alt="user"  /> 
         <div className="Content">
-          <h3>Name</h3>
+          <h3>{name||login}</h3>
         </div>
       </div>
     </a>
