@@ -1,8 +1,25 @@
 .usersWrapper{
-    width: 100%;
+    max-width: 1300px;
     padding: 20px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    
 } 
+
+@media (max-width: 1000px){
+    .usersWrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+@media (max-width:550px) {
+    .usersWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:450px) {
+    .usersWrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -7,7 +7,7 @@
   
   .Container > .Content {
     width: 100%; 
-    padding: 20px; 
+    padding: 7%; 
     color: #f1f1f1;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -26,4 +26,32 @@
   
   .Container > .Content > h3 {
     text-align: center;
+    font-size: 22px;
+
   }
+  
+  @media(max-width:1000px){
+    .Container > .Content > h3{
+      font-size:19px;
+    }
+  }
+  @media (max-width:800px) {
+    .Container > .Content > h3{
+        font-size: 15px
+    }
+}
+@media (max-width:600px) {
+  .Container > .Content > h3{
+    font-size:12px;
+  }
+}
+@media (max-width:450px),(min-width:300px) {
+  .Container > .Content > h3{
+    font-size:15px;
+  }
+}
+@media (max-width:300px) {
+  .Container > .Content > h3{
+    font-size:12px;
+  }
+}
