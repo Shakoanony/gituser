@@ -1,14 +1,24 @@
-.userWrapper{
+
+.Container {
+    position: relative;
+    max-width: 200px; 
+    margin: 0 auto; 
+    
+  }
+  
+  .Container .Content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%; 
+    padding: 20px; 
+    
+  }
+  .Container>img{
+      width: 100%;
+  }
+  .Container>Content>h3{
     text-align: center;
-}
-
-.imgWrapper{
-    width:100%;
-}
-
-.imgWrapper > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+  }

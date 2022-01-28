@@ -3,13 +3,13 @@ import React from 'react';
 
 function User() {
   return (
-    <div className="userWrapper">
-      <div className='imgWrapper'>
-        <img src="/twitter.png" alt="user" />
+   
+      <div className="Container">
+        <img src="/twitter.png" alt="user"  /> 
+        <div className="Content">
+          <h3>Name</h3>
+        </div>
       </div>
-
-      <h3 className='userName'>name</h3>
-    </div>
   )
 }
 
